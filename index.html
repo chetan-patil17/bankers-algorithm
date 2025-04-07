@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures responsiveness on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in the browser tab -->
+    <title>Banker's Algorithm</title>
+    
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Title -->
+    <h1>BANKER'S Algorithm</h1>
+    
+    <!-- Subtitle describing the purpose -->
+    <h2>Safe Sequence Algorithm</h2>
+
+    <!-- Input Section for user to enter the number of processes and resources -->
+    <div class="input-section">
+        <label>No of processes: </label>
+        <input type="number" id="processes" min="1" value="5"> <!-- Default value set to 5 -->
+
+        <label>No of resources: </label>
+        <input type="number" id="resources" min="1" value="4"> <!-- Default value set to 4 -->
+    </div>
+
+    <!-- Buttons for generating and resetting tables -->
+    <div class="btn-container">
+        <button onclick="generateTables()">Generate Tables</button> <!-- Calls function to generate tables -->
+        <button onclick="resetTables()">Reset Values</button> <!-- Calls function to reset all values -->
+    </div>
+
+    <!-- Container where dynamically generated tables will be displayed -->
+    <div id="tables-container"></div>
+
+    <!-- Button to calculate Available Resources & Need Matrix, initially hidden -->
+    <button id="generate-available" onclick="calculateAvailableMatrix()" style="display:none;">
+        Generate Available & Need Matrix
+    </button>
+
+    <!-- Output section where results will be displayed -->
+    <div id="output"></div>
+
+    <!-- Linking external JavaScript file for logic implementation -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('hetvi.jpg') no-repeat center center fixed; /* Full-screen background image */
+    background-size: cover;
+    text-align: center;
+    color: #ffffff; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================== */
+/* Header (H1) Styling  */
+/* ===================== */
+/* Styled H1 with Glow Effect and Background from H2 */
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 20px;  
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.7); /* Light semi-transparent background */
+    padding: 10px 24px; /* Padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    color: #2c3e50; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes text gradient visible */
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255), 
+                 0px 0px 20px rgb(0, 0, 0); /* Glow effect */
+}
+
+/* ================================ */
+/* Glassmorphism Effect for Display */
+/* ================================ */
+#safe-sequence {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(12px); /* Blur effect for glassmorphism */
+    padding: 20px;  
+    border-radius: 14px;
+    color: #ffffff;
+    box-shadow: 0px 4px 18px rgba(255, 255, 255, 0.25); /* Soft white glow */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ===================== */
+/* Subheading (H2) Style */
+/* ===================== */
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #2c3e50; /* Dark color for contrast */
+    background: rgba(255, 255, 255, 0.7); /* Light background */
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+/* ======================= */
+/* Input Fields & Styling  */
+/* ======================= */
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* Light input background */
+    transition: 0.3s;
+}
+
+/* Focus Effect for Input */
+input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0px 0px 12px rgba(142, 68, 173, 0.8); /* Purple glow effect */
+}
+
+/* ===================== */
+/* Button Styling       */
+/* ===================== */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    background: linear-gradient(135deg, #5944e7, #2980b9); /* Gradient background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #2980b9, #5944e7);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px rgba(52, 152, 219, 0.8);
+}
+
+/* ======================= */
+/* Table Styling (Enlarged) */
+/* ======================= */
+.table-container {
+    overflow-x: auto; /* Enables horizontal scrolling on small screens */
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+table {
+    width: 95%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    margin: 0 auto;
+}
+
+/* Table Header Styling */
+th {
+    background: rgb(89, 68, 231);
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.45);
+    font-size: 16px;
+}
+
+/* Table Cell Styling */
+td {
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    color: #ddd;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.3s ease-in-out;
+}
+
+/* ===================== */
+/* Output Section Styling */
+/* ===================== */
+#output {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+    background: transparent;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    max-width: 85%;
+    margin: 20px auto;
+}
+
+/* ========================= */
+/* Generate Button Styling   */
+/* ========================= */
+#generate-available {
+    display: block;
+    margin: 24px auto;
+    padding: 14px 24px;
+    border: none;
+    background: linear-gradient(135deg, #5944e7, #2980b9);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+/* ===================== */
+/* Label Styling         */
+/* ===================== */
+label {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff; 
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ==================================== */
+/* Responsive Design for Mobile & Tablet */
+/* ==================================== */
+@media (max-width: 1024px) {
+    h1 { font-size: 32px; }
+    .input-section, .btn-container { flex-direction: column; align-items: center; }
+    table { width: 95%; }
+    th, td { padding: 10px; font-size: 13px; }
+    button { width: 90%; max-width: 300px; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 28px; }
+    input { width: 100%; max-width: 200px; }
+    button { font-size: 14px; padding: 10px 18px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; padding: 8px 16px; }
+    button { font-size: 14px; width: 100%; }
+}
